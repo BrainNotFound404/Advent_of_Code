@@ -28,5 +28,6 @@ int main() {
 
     printf("%d", sim_score);
 
+    fin.close();
     return 0;
 }

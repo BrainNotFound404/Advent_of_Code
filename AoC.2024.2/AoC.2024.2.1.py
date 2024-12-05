@@ -15,5 +15,5 @@ for line in f:
                 break
         else:
             safe_reports += 1
-
+f.close()
 print(safe_reports)

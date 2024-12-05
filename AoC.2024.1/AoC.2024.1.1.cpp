@@ -25,5 +25,6 @@ int main() {
 
     printf("%d\n", diff);
 
+    fin.close();
     return 0;
 }
