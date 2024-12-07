@@ -30,8 +30,13 @@ for line in f:
 
             if not is_correct:
                 break
-        if is_correct:
+        if not is_correct:
             #print(numbers[len(numbers) // 2])
+            for i in range(len(numbers) - 1):
+                for j in range(i + 1, len(numbers)):
+                    if numbers[i] in correct_order[numbers[j]]:
+                        numbers[i], numbers[j] = numbers[j], numbers[i]
+            
             sum += int(numbers[len(numbers) // 2])
 
 
